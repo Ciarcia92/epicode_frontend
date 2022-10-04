@@ -190,6 +190,9 @@ header {
     z-index: 10;
 }
 
+li {
+    display: inline-block;
+ }
 
 p img {
     float: left;
@@ -237,9 +240,6 @@ section h2 {
     bottom: 8vh;
 }
  .top i {
-    color: violet;
+    color: #c87aa5;
  } 
 
- li {
-    display: inline-block;
- }
