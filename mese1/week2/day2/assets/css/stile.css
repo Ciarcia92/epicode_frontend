@@ -201,6 +201,9 @@ p img {
     margin-right: 20px;
 }
 
+iframe {
+    visibility: hidden;
+}
 section {
     padding: 2em 1em 1em;
     position: relative;
