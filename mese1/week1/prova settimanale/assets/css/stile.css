@@ -1,0 +1,122 @@
+/* GENERALI */
+body{
+    color: #393d41;
+    font-size: 1.2rem;
+    line-height: 1.65;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    color: #25a2c3;
+    line-height: 1.5;
+}
+h3 {
+    font-size: 22px;
+}
+/*HEADER*/
+header {
+    background-color: black;
+    width: 100%;
+    padding: 32px 16px;
+    text-align: center;
+}
+header img {
+    width: 33%;
+}
+/*MAIN*/
+h1 {
+    font-size: 32px;
+}
+main section {
+    padding: 40px 16px 16px;
+    width: 100%;
+}
+main section:nth-child(1) {
+    min-height: 275px;
+    background-image: url("../images/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+main section:nth-child(2) img {
+    border-radius: 50%;
+    width: 70%;
+    margin: 24px 0;
+}
+main section:nth-child(2) div {
+    padding: 16px;
+}
+main section:nth-child(3) {
+    background-color: #e22d0e;
+    color: white;
+    margin-bottom: 38px;
+}
+main section:nth-child(3) h2 {
+    font-size: 32px;
+    margin: 0 0 10px;
+    color: white;
+}
+main section:nth-child(3) blockquote {
+    font-style: italic;
+    margin-bottom: 16px;
+}
+
+main section:nth-child(4)  {
+    margin-bottom: 24px;
+}
+main section:nth-child(4) div {
+    border: 1px solid #dee1e3;
+    text-align: center;
+    margin: 0 16px 32px;
+}
+main section:nth-child(4) div img {
+    width: 100%;
+}
+button {
+    background-color: #f04c2f;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold ;
+    border-radius: 5px;
+    padding: 8px;
+    border: none;
+    margin-top: 40px;
+    width: 33%;
+    min-height: 40px;
+}
+button a {
+    color:  white;
+    text-decoration: none;
+}
+
+
+/* FOOTER */
+footer {
+    color: #c8e7f0;
+    background-color: #25a2c3;
+    width: 100%;
+    padding: 40px 16px;
+    text-align: center;
+}
+footer h2 {
+    color: white;
+    font-size: 28px;
+}
+footer a {
+    color: #c8e7f0;
+}
+footer li {
+    list-style-type: none;
+}
+i {
+    margin-right: 5px;
+}
+hr {
+    color: white;
+    width: 50%;
+}
+footer p:last-child {
+    margin-top: 22px;
+    font-size: 16px;
+}
+
+

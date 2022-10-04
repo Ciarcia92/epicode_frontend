@@ -1,0 +1,201 @@
+/* IMPOSTAZIONI GENERALI */
+html {
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background-image: url("../img/sfondo.png");
+    background-position: center;
+
+}
+hr {
+    display: none;
+}
+/* HEADER */
+header {
+    background-color: #02738b;
+    margin: 12px;
+    padding: 40px;
+    text-align: center;
+    font-size: 20px;
+}
+
+header ul {
+    padding-top: 20px ;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    list-style-type: none;
+}
+header li {
+    padding: 5px;
+    
+}
+li a {
+    text-decoration: none;
+    color: white;
+}
+header div p {
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    padding-top: 20px;
+}
+nav li::after{
+    content: '\21da';
+}
+nav li::before {
+    content: '\21db';
+}
+/* MAIN */
+main {
+    background-color: white;
+    margin: 24px 12px 12px 12px;
+    padding: 26px 16px;
+}
+/* ELEMENTI NEL MAIN - ARTICLE */
+article p {
+    padding: 10px;
+}
+article p i {
+    margin: 5px;
+}
+main ul {
+    padding: 8px 0;
+}
+main ul li {
+    list-style-position: inside;
+    margin-left: 1em;
+    line-height: 1.5em;
+}
+ol {
+    list-style-position: inside;
+    margin-left: 1em;
+}
+h1 {
+    font-size: 32px;
+    margin: 0.67em;
+}
+h1 + p {
+    color: grey;
+    margin: 16px;
+}
+strong {
+    color: #aa2072;
+    font-weight: bold;
+}
+code {
+    background-color: #dee4e5;
+    border: 1px solid #a6aaaa;
+    border-radius: 7px;
+    
+} 
+article li {
+    padding: 7px;
+}
+
+main a {
+    color: #05a3cc;
+}
+iframe {
+    border-radius: 15px;
+    min-height: 150px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    width: 100%;
+}
+/* TABELLE */
+table {
+    margin: 0 auto;
+    text-align: center;
+    border-bottom: 2px solid #356ccc;
+    width: 100%;
+}
+th, td {
+    padding: 16px;
+}
+th {
+    border-right: 0.5px solid white;
+}
+caption {
+    font-style: oblique;
+    font-weight: bold;
+}
+thead {
+    background-color: #356ccc;
+    color: white;
+    
+}
+tbody tr:nth-child(2n) {
+    background-color: #f1f1f1;
+}
+table + p {
+    padding: 24px 0;
+}
+/* FORM */
+section {
+    background-color: #dfe5e6;
+    padding: 24px;
+    margin-bottom: 16px;
+}
+section h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+}
+form {
+    width: 100%;
+}
+input {
+    text-align: center;
+    border: none;
+    border-bottom: 1px dotted black;
+}
+button {
+    background-color: #3366cc;
+    border: none;
+    color: white
+}
+
+/* ELEMENTI NELL' ASIDE */
+aside h2 {
+    font-size: 26px;
+    text-align: center;
+}
+aside div {
+    display: block;
+    background-color: #e1e0e0;
+    margin: 8px 0;
+    padding: 24px;
+    border: 2px solid #cccccc;
+}
+aside div p:nth-child(3) {
+    text-align: right;
+}
+aside div p:nth-child(2) i {
+    margin: 5px;
+}
+aside div p:nth-child(3) i {
+    margin: 5px;
+}
+aside div a + p {
+    margin: 8px 0px 16px 0px;
+}
+
+/* FOOTER */
+footer {
+    background: linear-gradient(0deg, #2a3339, #005567 80%) no-repeat;
+    margin: 24px 12px;
+    padding:8px;
+    color: white;
+    text-align: center;
+}
+footer a {
+    color: #ff00fe;
+}
+footer p {
+    padding: 16px 0px 20px 0px
+}
+footer address {
+    padding-bottom: 24px;
+}
