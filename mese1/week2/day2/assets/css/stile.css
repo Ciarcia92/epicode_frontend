@@ -189,6 +189,11 @@ header {
     top: 0;
     z-index: 10;
 }
+header p::after{
+    content:"";
+    clear:both;
+    display: block;
+}
 
 li {
     display: inline-block;
