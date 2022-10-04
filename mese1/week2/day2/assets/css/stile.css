@@ -211,19 +211,20 @@ section h2 {
     position: fixed;
     right: -4px;
     top: 350px;
+    margin-top: 8px;
 }
 
 .calendar {
     position: fixed;
     right: -4px;
     bottom: 600px;
+
 }
 
-.face, .top, .calendar {
-    font-size: 3em;
-}
+
 .face i, .top i, .calendar i {
     background-color: white;
+    font-size: 3em;
 }
 
 .top {
@@ -235,3 +236,6 @@ section h2 {
     color: violet;
  } 
 
+ li {
+    display: inline-block;
+ }
