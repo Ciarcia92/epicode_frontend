@@ -210,14 +210,14 @@ section h2 {
 .face {
     position: fixed;
     right: -4px;
-    top: 350px;
+    top: 36vh;
     margin-top: 8px;
 }
 
 .calendar {
     position: fixed;
     right: -4px;
-    bottom: 600px;
+    bottom: 50vh;
 
 }
 
