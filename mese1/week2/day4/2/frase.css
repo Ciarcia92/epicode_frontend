@@ -8,3 +8,20 @@
 7 ritardare progressivamente l'animazione delle altre 2 parole 
 */
 
+body {
+    font-family: 'Bree Serif', sans-serif;
+	font-size: 3rem;
+    line-height: 1.5;
+}
+main {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+div {
+    width: 80%;
+    margin: 0 auto;
+    border: 4px solid #666;
+    padding: 32px;
+}
+@keyframes 
