@@ -22,6 +22,40 @@ div {
     width: 80%;
     margin: 0 auto;
     border: 4px solid #666;
-    padding: 32px;
+    padding: 40px; 
+    position: relative;
 }
-@keyframes 
+
+p {
+    text-shadow: 1px 1px 1px rgb(146 146 146 / 80%);
+}
+
+.parole {
+    display: flex;
+    align-items: flex-end;
+}
+
+@keyframes testoAlternato {
+    0% {color: transparent; top: -20px; opacity: 0;}
+    25%{color: rgb(74, 148, 228); top: 0px; opacity: 1;}
+    50%{color: transparent; top: 20px; opacity: 0;}
+}
+.parole i {
+    position: absolute;
+    left: 66vh;
+    margin-top: 184px;
+    opacity: 0;
+    color: transparent;
+    animation-name: testoAlternato;
+    animation-duration: 6s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+.parole i:nth-child(2) {
+    animation-delay: 2s;
+    color: #6b889d;
+}
+.parole i:nth-child(3) {
+    animation-delay: 4s;
+    color: #6b739d;
+}
