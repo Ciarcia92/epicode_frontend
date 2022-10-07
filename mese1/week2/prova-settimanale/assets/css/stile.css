@@ -353,6 +353,9 @@ form button {
     display: flex;
     gap: 50px;
   }
+  .tablets img:nth-child(1) {
+    height: 306px;
+  }
   .tablets div {
     display: flex;
     flex-direction: column;
