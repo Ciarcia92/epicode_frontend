@@ -1,0 +1,423 @@
+/* IMPOSTAZIONI GENERALI */
+body {
+  font-size: 1.5rem;
+  font-family: "Fira Sans", sans-serif;
+  line-height: 1.8;
+  color: #000;
+  width: 100%;
+}
+section {
+  box-sizing: border-box;
+}
+h1 {
+  font-size: 4rem;
+  line-height: 1.2;
+}
+h2 {
+  font-size: 3.5rem;
+  line-height: 1.1;
+}
+h3 {
+  line-height: 1;
+  font-size: 2.7rem;
+}
+h4 {
+  font-size: 1.4em;
+  line-height: 0.9;
+  margin-bottom: 32px;
+}
+a {
+  color: #e42424;
+}
+ul {
+  background-color: white;
+}
+.toggle-menu[type="checkbox"]:checked + ul {
+  background-color: #000000;
+}
+button {
+  color: white;
+  font-size: 0.8em;
+  background: rgb(108, 193, 226);
+  background: linear-gradient(
+    90deg,
+    rgba(108, 193, 226, 1) 35%,
+    rgba(57, 47, 122, 1) 100%
+  );
+}
+button:not(.newsletter, .send-msg) {
+  width: 156px;
+}
+/* TOOLTIP */
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  left: 5vh;
+  top: 8vh;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+/* ICONE */
+
+.lni.lni-instagram-filled,
+.lni.lni-linkedin-original,
+.lni.lni-facebook-original,
+.lni.lni-smile,
+.lni.lni-consulting,
+.lni.lni-map-marker,
+.lni.lni-comments,
+.lni.lni-more-alt {
+  font-size: 2.3em;
+  color: #e42424;
+}
+
+/* HEADER */
+header {
+  background-color: white;
+  padding: 16px;
+  -webkit-box-shadow: 0px 5px 10px 1px #acacac;
+  box-shadow: 0px 5px 10px 1px #acacac;
+}
+header img {
+  width: 150px;
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+nav ul {
+  list-style-type: none;
+}
+nav a {
+  text-decoration: none;
+}
+
+/* MAIN */
+
+.require-info {
+  color: white;
+  padding: 24px 16px;
+  background-image: url(../images/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-shadow: 2px 2px 2px #000000;
+}
+.require-info button,
+.scrivici button,
+header button {
+  padding: 16px;
+}
+.animated-btn {
+  animation: changeShadow 1s infinite;
+}
+@keyframes changeShadow {
+  0% {
+    box-shadow: 0px 0px 0px 0px;
+  }
+  25% {
+    box-shadow: 0px 0px 6px 2px black;
+  }
+  50% {
+    box-shadow: 0px 0px 9px 4px black;
+  }
+  75% {
+    box-shadow: 0px 0px 12px 6px black;
+  }
+  100% {
+    box-shadow: 0px 0px 15px 8px black;
+  }
+}
+
+.become-a-developer {
+  padding: 24px 16px;
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.scrivici {
+  padding: 36px 24px;
+  text-align: center;
+  background-color: #0c0633;
+  color: white;
+}
+.developer {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+  padding: 32px 0;
+}
+.developer img {
+  width: 80%;
+}
+.future {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.specifiche {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+/*   CONTATTI   */
+.contacts {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 30px;
+  gap: 30px;
+}
+.form-contacts {
+  min-height: 500px;
+  padding: 15px 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: center;
+}
+.form-contacts form {
+  gap: 15px;
+}
+.form-contacts textarea {
+  min-width: 100%;
+}
+.work-with-us {
+  min-height: 500px;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/*  CHI SIAMO   */
+
+.we-are-coder {
+  padding: 56px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.we-are-coder img {
+  width: 100%;
+}
+
+/*   TABELLA    */
+table {
+  width: 80%;
+  margin: 0 auto 32px;
+
+}
+thead {
+  background-color: #5f82a4;
+  color: white;
+}
+tbody tr:nth-child(odd) {
+  background-color: #d2dce7;
+}
+th {
+  font-weight: bold;
+}
+tr {
+  max-height: 170px;
+  padding: 16px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+}
+td {
+  text-align: left;
+}
+/* FOOTER */
+footer {
+  background-color: rgb(238, 238, 238);
+  padding: 66px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-sizing: border-box;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+form input,
+form button {
+  padding: 18px;
+}
+/* RESPONSIVE */
+@media screen and (min-width: 768px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  nav ul {
+    color: #565656;
+    display: flex;
+    gap: 10px;
+  }
+  nav ul li a {
+    color: #565656;
+  }
+  .menu i {
+    display: none;
+  }
+  .require-info {
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding: 0 60px;
+    gap: 15px;
+  }
+  .reasons {
+    display: flex;
+    gap: 60px;
+  }
+  .reasons div {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .scrivici {
+    min-height: 300px;
+    padding: 60px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+  }
+  /*  CHI SIAMO */
+
+  .we-are-coder {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .tablets {
+    display: flex;
+    gap: 50px;
+  }
+  .tablets div {
+    display: flex;
+    flex-direction: column;
+  }
+  /* TABELLA */
+  table {
+    width: 95%;
+  }
+/* FOOTER */
+
+  footer {
+    gap: 40px;
+    padding: 46px 76px 62px;
+  }
+  .developer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 32px;
+    text-align: left;
+  }
+  .developer img {
+    width: 100%;
+  }
+  .info {
+    display: flex;
+    flex-direction: row;
+  }
+  .info div:not(.social) {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  /* CONTATTI */
+  .form-contacts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .work-with-us {
+    padding-top: 0;
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .menu {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .require-info {
+    padding: 0 18%;
+  }
+  .become-a-developer {
+    padding: 50px 90px;
+  }
+  .developer {
+    padding: 5% 10%;
+  }
+  .specifiche {
+    gap: 80px;
+  }
+  .info {
+    padding: inherit;
+  }
+  .copyright {
+    text-align: center;
+  }
+
+  /* CHI SIAMO */
+
+  .tablets {
+    padding: 0px 86px;
+  }
+  .tablets img:nth-child(1) {
+    height: 441.898px;
+  }
+  /* TABELLA */
+  table {
+    width: 70%;
+  }
+}

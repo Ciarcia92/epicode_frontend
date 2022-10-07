@@ -47,7 +47,7 @@ p {
     opacity: 0;
     color: transparent;
     animation-name: testoAlternato;
-    animation-duration: 6s;
+    animation-duration: 3s;
     animation-delay: 0s;
     animation-iteration-count: infinite;
 }
@@ -56,6 +56,6 @@ p {
     color: #6b889d;
 }
 .parole i:nth-child(3) {
-    animation-delay: 4s;
+    animation-delay: 1s;
     color: #6b739d;
 }
