@@ -23,17 +23,21 @@
     <header>
       <div class="menu">
         <img src="./assets/images/logo.png" alt="logo Epicode" />
-        <i class="lni lni-more-alt"></i>
       </div>
+      <label class="toggle" for="toggle"> <i class="lni lni-more-alt"></i> </label>
+      <input type="checkbox" id="toggle" class="toggle-menu"/>
       <nav>
         <ul>
           <li><a href="#">HOME</a></li>
           <li><a href="./chi-siamo.html">CHI SIAMO</a></li>
           <li><a href="./contatti.html">CONTATTI</a></li>
         </ul>
-        <button class="tooltip">REGISTRATI
-        <span class="tooltiptext">Registrati per accedere all'area riservata</span>
-      </button>
+        <button class="tooltip">
+          REGISTRATI
+          <span class="tooltiptext"
+            >Registrati per accedere all'area riservata</span
+          >
+        </button>
       </nav>
     </header>
     <main>
@@ -45,13 +49,13 @@
           su di te: paghi metà corso, l'altra metà solo quando inizi a lavorare.
         </p>
 
-        <button class="animated-btn tooltip"
+        <button
+          class="animated-btn tooltip"
           type="button"
           onclick="window.location.href='./contatti.html'"
         >
           Chiedi info
           <span class="tooltiptext">Tutti i modi per contattarci</span>
-
         </button>
       </section>
 
@@ -99,10 +103,7 @@
         <h2>Ma chi è il developer oggi?</h2>
         <p>Se non lo sai te lo diciamo noi: il futuro è dei developer</p>
 
-        <button
-        class="tooltip"
-          type="button"
-        >
+        <button class="tooltip" type="button">
           Scrivici!
           <span class="tooltiptext">Contattaci per informazioni</span>
         </button>
