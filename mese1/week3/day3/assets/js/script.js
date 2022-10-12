@@ -1,19 +1,15 @@
-/* punto uno.1*/
+/* punto uno */
 
 function stampa (apples, oranges) {
- document.getElementById('corretta').innerHTML= `Succo con ${apples} mele e ${oranges} arance`;
-}
+    let succo = `Succo con ${apples} mele e ${oranges} arance`;
+    return succo
+ }
+ document.getElementById('corretta').innerHTML= stampa(4, 5);
+ document.getElementById('sbagliata').innerHTML= stampa(6);
 
-stampa(4, 5);
 
-/* punto uno.2 */
-
-function stampa2 (apples, oranges) {
-    document.getElementById('sbagliata').innerHTML= `Succo con ${apples} mele e ${oranges} arance`;
-}
-
-stampa2 (6);
 /* punto 2 */
+
 /*
 function eta (anni) {
     document.getElementById('eta').innerHTML+= `${anni} anni`;
