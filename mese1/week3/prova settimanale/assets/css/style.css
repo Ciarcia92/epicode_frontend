@@ -10,9 +10,9 @@ h1 {
     margin: 16px 0 0;
 }
 .calculator {
-    width: 60%;
+    width: 70%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 6px;
     margin: 0 auto;
@@ -35,13 +35,13 @@ input {
 }
 
 #display-calc {
-    grid-column: 1/5;
+    grid-column: 1/6;
     min-height: 70px;
 }
 
 #equal-sign {
-    grid-row: 5/7;
-    grid-column: 4;
+    grid-row: 2/7;
+    grid-column: 5;
     background-color: #80aee2 ;
 }
 #unlock-img-btn {
