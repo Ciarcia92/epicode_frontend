@@ -30,7 +30,7 @@ document.getElementById('estraiStringa').innerHTML= slice5;
 const persone = ['Giovanni', 'Carla', 'Pietro', 'Mirtilla'];
 
 document.getElementById('array').innerHTML= persone.toString();
-
+ 
 document.getElementById('lunghezza').innerHTML= persone.length;
 
 document.getElementById('elemento').innerHTML= persone.slice(2,3);

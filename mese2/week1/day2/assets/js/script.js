@@ -18,22 +18,6 @@ btn.addEventListener('click', function(){
     document.getElementById('list').innerHTML += "<h2>Hai speso abbastanza</h2>";
     document.getElementById('list').innerHTML += "<p>Totale pese effettuate: " + expense + "</p>";
     document.getElementById('list').innerHTML += "<p>Budget rimanente: €" + newBudget + "</p>";
-
-
-
-        /*
-    }
-        var newBudget;
-        console.log('ammontare della spesa: ', expense)
-        newBudget= oldBudget-expense;
-        console.log('nuovo budget aggiornato: ', newBudget);
-    for(let i= 0; i< expenses.length; i++) {
-        let newBudget;
-            console.log('ammontare della spesa: ', expenses[i]);
-            newBudget= oldBudget-expenses[i];
-            console.log('nuovo budget aggiornato: ', newBudget);
-    }
-    */
 });
 
 

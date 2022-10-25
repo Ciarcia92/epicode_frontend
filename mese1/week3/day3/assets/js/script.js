@@ -67,4 +67,3 @@ calcola.addEventListener('click', function(){
     document.getElementById('abiti').value=''
    return spesa;
 })
-

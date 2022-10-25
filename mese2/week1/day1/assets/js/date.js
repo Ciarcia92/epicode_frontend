@@ -20,4 +20,4 @@ greetBtn.addEventListener('click', function(){
     } else {
         greeting.innerHTML = `Hello, stranger`
     }
-})
+});
