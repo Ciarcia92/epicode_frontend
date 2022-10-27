@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pagina interattiva</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <button onclick="showHide()">Apri</button>
+
+      <nav id="nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Chi siamo</a></li>
+          <li><a href="#">Contatti</a></li>
+        </ul>
+      </nav>
+    </header>
+
+   <div> <h1 id="title">Pagina interattiva</h1> </div>
+
+    <div id="buttons">
+      <button type="button" id="grande">grande</button
+      ><button type="button" id="colore">colore</button
+      ><button type="button" id="maiusc">maiuscolo</button
+      ><button type="button" id="hide">nascondi</button
+      ><button type="button" id="show">mostrare</button>
+    </div>
+
+    <div>
+      <h3>LISTA DEGLI IMPEGNI GIORNALIERI</h3>
+      <ul id="lista">
+        <li class="list" onmouseover="changeColor()">Lavare la macchina</li>
+        <li class="list">Andare dal dentista</li>
+        <li class="list">Palestra</li>
+        <li class="list">Spesa</li>
+      </ul>
+    </div>
+
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
