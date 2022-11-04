@@ -1,0 +1,80 @@
+main {
+    @include changeColor($background-color);
+}
+.fs-1 {
+    font-weight: lighter;
+}
+#nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: $colore-primario; 
+    .logo a {
+    color: $colore-secondario;
+    }
+    .red {
+    color:$colore-icone;
+    }
+    a:focus {
+        color: $colore-secondario;
+    }
+}
+#first {
+    padding-block: $padding-secondario;
+}
+#list-footer, h2 {
+    padding-block: $padding-secondario;
+}
+
+#second {
+    padding-block: $padding-secondario;
+    background-color: $colore-sfondo;
+}
+#partners {
+    padding: 50px 0 100px;
+    div {
+        padding-block: $padding-secondario;
+    }
+}
+#opinions svg {
+    color:$colore-icone;
+}
+#btn {
+    background-color: $colore-primario;
+    border: none;
+}
+#first {
+    background-image: url(../../img/pexels-aleksandar-pasaric-325185.jpg);
+    background-size: cover;
+    height: 500px;
+}
+.carousel{
+    img{
+            width: 5rem;
+            height: 5rem;
+            left: 50%;
+            margin: 0 auto;
+            border-radius: 50%;
+        }
+    p {
+        padding-inline: 150px;
+        line-height: 1.8;
+    }
+    .name {
+        font-size: 1.5rem;
+    }
+}
+#footer {
+    background-color:$colore-primario;
+    color: $colore-secondario;
+    ul {
+        margin-left: -26px;
+    }
+    li {
+        list-style-type:none;
+    }
+    #copyright {
+        padding-block: 10px;
+    }
+
+}
