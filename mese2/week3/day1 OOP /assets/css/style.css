@@ -1,0 +1,32 @@
+#custom-form {
+    background-color: #9ED5C5;
+    padding: 16px;
+    border-radius: 20px;
+}
+
+.form-label {
+    background-color: #BCEAD5;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+input {
+    border-radius: 8px;
+    border: none;
+    padding: 5px;
+}
+
+#submit {
+    background-color: #3a6a58;
+    border-color: #3a6a58;
+}
+
+.table {
+    background-color: #9ED5C5;
+    padding: 16px;
+    border-radius: 16px;
+}
+
+tbody tr {
+    background-color: #BCEAD5;
+}
