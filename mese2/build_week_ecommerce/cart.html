@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrello</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg blue fixed-top">
+          <div class="container-fluid">
+            <a class="navbar-brand fw-bold me-5 yellow" href="index.html"
+              ><img src="assets/img/logo2.png" width="100" height="50" alt=""
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mb-2 mb-lg-0" id="respo">
+                <li class="list-unstyled"><a href="#"></a></li>
+                <li class="nav-item dropdown list-unstyled">
+                  <a
+                    class="nav-link dropdown yellow"
+                    id="film"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    >Film</a
+                  >
+                  <ul class="dropdown-menu blue" id="categorieFilm">
+                    <li><a class="dropdown-item yellow" href="#">Azione</a></li>
+                    <li>
+                      <a class="dropdown-item yellow" href="#">Romantico</a>
+                    </li>
+                    <li><a class="dropdown-item yellow" href="#">Horror</a></li>
+                    <li><a class="dropdown-item yellow" href="#">Commedia</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown list-unstyled">
+                  <a
+                    class="nav-link dropdown yellow"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    >Serie&#8209;TV</a
+                  >
+                  <ul class="dropdown-menu blue" id="categorieSerie">
+                    <li><a class="dropdown-item yellow" href="#">Azione</a></li>
+                    <li>
+                      <a class="dropdown-item yellow" href="#">Romantico</a>
+                    </li>
+                    <li><a class="dropdown-item yellow" href="#">Dramma</a></li>
+                    <li><a class="dropdown-item yellow" href="#">Sitcom</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown list-unstyled">
+                  <a
+                    class="nav-link yellow"
+                    href="#"
+                    role="button"
+                    aria-expanded="false"
+                    >Ultimi&nbsp;arrivi</a
+                  >
+                </li>
+                <li class="nav-item dropdown list-unstyled">
+                  <a
+                    class="nav-link yellow"
+                    href="#"
+                    role="button"
+                    aria-expanded="false"
+                    >I&nbsp;più&nbsp;popolari</a
+                  >
+                </li>
+              </ul>
+              <form class="container-fluid">
+                <div class="input-group">
+                  <span class="input-group-text bg-white"
+                    ><a href="#"><i class="fas fa-search bg-white"></i></a
+                  ></span>
+                  <input
+                    id="search_bar"
+                    type="text"
+                    class="form-control shadow-none"
+                    placeholder="Cerca..."
+                    aria-label="Username"
+                    aria-describedby="basic-addon1" />
+                </div>
+              </form>
+              <li class="list-unstyled">
+                <a href="cart.html"><i class="fas fa-shopping-cart yellow"></i></a>
+              </li>
+              <li class="nav-item dropdown list-unstyled" id="respoSaluto">
+                <a
+                  id="saluto"
+                  class="btn nav-link dropdown me-3 ms-2 yellow d-flex interactiveBtn"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Login</a
+                >
+                <ul class="dropdown-menu blue">
+                  <form id="form_login" class="formLogin">
+                    <input
+                      class="bg-white dropdown-item form-control shadow-none"
+                      id="user"
+                      type="text"
+                      name="username"
+                      placeholder="Username"
+                      required />
+                    <input
+                      class="bg-white dropdown-item form-control shadow-none"
+                      id="password"
+                      type="password"
+                      name="password"
+                      placeholder="Password"
+                      required />
+                    <p class="text-danger text-center" id="erroreLogin"></p>
+                    <button type="button" class="btn mx-5 yellow" id="btnLogin">
+                      Accedi
+                    </button>
+                  </form>
+                  <div id="formLogged">
+                    <li>
+                      <a class="dropdown-item yellow" href="#"
+                        ><i class="fas fa-cog m-1"></i>Impostazioni</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item yellow" href="#"
+                        ><i class="fas fa-user m-1"></i>Profilo</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item yellow" href="#"
+                        ><i class="fas fa-envelope m-1"></i>Messaggi</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" id="divider"></li>
+                    <li>
+                      <a class="dropdown-item yellow" href="#" id="logout"><i class="fas fa-running m-1"></i>Logout</a>
+                    </li>
+                  </div>
+                </ul>
+              </li>
+  
+                <a href="#" class="btn formLogin yellow interactiveBtn" id="registrati">Registrati</a>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+    <main id="mainCart" class="mt-5">
+
+        <div>
+            <div class="d-flex justify-content-between">
+                <h1 class="m-2">Carrello</h1>
+                <button type="button" id="svuota" class="btn btn-danger m-2"><i
+                        class="fas fa-cart-arrow-down"></i></button>
+            </div>
+            <div class="m-2">
+                <p><span id="numArticoli" class="ms-2"></span></p>
+            </div>
+            <hr>
+            <div class="row w-100">
+                <div class="container mb-5 col-lg-10">
+                    <div id="emptyCartPlaceholder">
+                        <p class="text-center display-5">Il carrello è vuoto :(</p>
+                        <img width="100%" src="assets/img/emptyCart.png" alt="carrello_vuoto">
+                    </div>
+                    <div class="container">
+                    <dl id="cartList" class="pe-0 list-group pb-5">
+                        <!-- Prodotti del carrello-->
+                    </dl>
+                    </div>
+            
+                </div>
+                <div class="col-lg-2">
+                    <div id="paySection" class="bg-white">
+                        <!--Evento carrello vuoto-->
+                        <div id="emptyCartBtn" class="container">
+                            <a href="index.html" class="btn btn-warning w-100 my-2">Torna alla home</a>
+                        </div>
+                        <!--Evento carrello pieno-->
+                        <div id="barraPagamento"
+                            class="fixed-bottom d-flex flex-wrap justify-content-between align-items-center py-2 bg-white shadow-lg">
+                            <p class="m-2 fs-5">Totale: <span id="costoTotale"></span></p>
+                            <a class="btn m-2" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Procedi al
+                                pagamento</a>
+                            <div id="spessoreCarrello" class="w-100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+        <!--MODALI PER L'ACQUISTO-->
+        <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+            tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <p class="modal-title fs-5 mx-auto" id="exampleModalToggleLabel">Attenzione</p>
+                        
+                    </div>
+                    <div class="modal-body">
+                        <p>Verifica l'indirizzo di consegna.
+                            <br>
+                            <span id="indirizzoConsegna"></span>
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="mx-auto">
+                            <button class="btn btn-success" data-bs-target="#exampleModalToggle2"
+                                data-bs-toggle="modal">Conferma</button>
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Indietro</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+            tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <p class="modal-title fs-5 mx-auto" id="exampleModalToggleLabel2">Ordine effettuato! :)</p>
+                    </div>
+                    <div class="modal-body">
+                        <p>Grazie per averci scelto, riceverai al più presto una mail di riepilogo nella tua casella di posta elettronica
+                            <hr>
+                            <div>
+                                <p>Riepilogo ordine:</p>
+                                <ul id="riepilogo" class="list-group"></ul>
+                            </div>
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button id="acquistoEffettuato" class="btn btn-success mx-auto" data-bs-dismiss="modal">Ok</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer id="footer">
+      <div id="footerStyle" class="text-center">
+          
+          <div class="card-body">
+              <p class="p-2 card-text text-white">&copy; <a class="text-white" href="https://epicode.com/it/" target="_blank">Epicode</a> 2022</p>
+          </div>
+      </div>
+  </footer>
+    
+    <script src="assets/js/nav2.js"></script>
+    <script src="https://kit.fontawesome.com/0ff7ae3867.js" crossorigin="anonymous"></script>
+    <script src="assets/js/cart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

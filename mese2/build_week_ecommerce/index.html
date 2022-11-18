@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css' rel='stylesheet'
+        integrity='sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi' crossorigin='anonymous'>
+    <script src="assets/js/popper.min.js"></script>
+    <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js'
+        integrity='sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3'
+        crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="assets/css/style.css"> 
+    <title>index</title>
+</head>
+<body id="homeBody">
+
+  <header>
+    <nav class="navbar navbar-expand-lg blue fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold me-5 yellow" href="index.html"
+          ><img src="assets/img/logo2.png" width="100" height="50" alt=""
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0" id="respo">
+            <li class="list-unstyled"><a href="#"></a></li>
+            <li class="nav-item dropdown list-unstyled">
+              <a
+                class="nav-link dropdown yellow"
+                id="film"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Film</a
+              >
+              <ul class="dropdown-menu blue" id="categorieFilm">
+                <li><a class="dropdown-item yellow" href="#">Azione</a></li>
+                <li>
+                  <a class="dropdown-item yellow" href="#">Romantico</a>
+                </li>
+                <li><a class="dropdown-item yellow" href="#">Horror</a></li>
+                <li><a class="dropdown-item yellow" href="#">Commedia</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown list-unstyled">
+              <a
+                class="nav-link dropdown yellow"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Serie&#8209;TV</a
+              >
+              <ul class="dropdown-menu blue" id="categorieSerie">
+                <li><a class="dropdown-item yellow" href="#">Azione</a></li>
+                <li>
+                  <a class="dropdown-item yellow" href="#">Romantico</a>
+                </li>
+                <li><a class="dropdown-item yellow" href="#">Dramma</a></li>
+                <li><a class="dropdown-item yellow" href="#">Sitcom</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown list-unstyled">
+              <a
+                class="nav-link yellow"
+                href="#"
+                role="button"
+                aria-expanded="false"
+                >Ultimi&nbsp;arrivi</a
+              >
+            </li>
+            <li class="nav-item dropdown list-unstyled">
+              <a
+                class="nav-link yellow"
+                href="#"
+                role="button"
+                aria-expanded="false"
+                >I&nbsp;più&nbsp;popolari</a
+              >
+            </li>
+          </ul>
+          <form class="container-fluid">
+            <div class="input-group">
+              <span class="input-group-text bg-white"
+                ><a href="#"><i class="fas fa-search bg-white"></i></a
+              ></span>
+              <input
+                id="search_bar"
+                type="text"
+                class="form-control shadow-none"
+                placeholder="Cerca..."
+                aria-label="Username"
+                aria-describedby="basic-addon1" />
+            </div>
+          </form>
+          <li class="list-unstyled">
+            <a href="cart.html"><i class="fas fa-shopping-cart yellow"></i></a>
+          </li>
+          <li class="nav-item dropdown list-unstyled" id="respoSaluto">
+            <a
+              id="saluto"
+              class="btn nav-link dropdown me-3 ms-2 yellow d-flex interactiveBtn"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              >Login</a
+            >
+            <ul class="dropdown-menu blue">
+              <form id="form_login" class="formLogin">
+                <input
+                  class="bg-white dropdown-item form-control shadow-none"
+                  id="user"
+                  type="text"
+                  name="username"
+                  placeholder="Username"
+                  required />
+                <input
+                  class="bg-white dropdown-item form-control shadow-none"
+                  id="password"
+                  type="password"
+                  name="password"
+                  placeholder="Password"
+                  required />
+                <p class="text-danger text-center" id="erroreLogin"></p>
+                <button type="button" class="btn mx-5 yellow" id="btnLogin">
+                  Accedi
+                </button>
+              </form>
+              <div id="formLogged">
+                <li>
+                  <a class="dropdown-item yellow" href="#"
+                    ><i class="fas fa-cog m-1"></i>Impostazioni</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item yellow" href="#"
+                    ><i class="fas fa-user m-1"></i>Profilo</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item yellow" href="#"
+                    ><i class="fas fa-envelope m-1"></i>Messaggi</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" id="divider"></li>
+                <li>
+                  <a class="dropdown-item yellow" href="#" id="logout"><i class="fas fa-running m-1"></i>Logout</a>
+                </li>
+              </div>
+            </ul>
+          </li>
+
+            <a href="#" class="btn formLogin yellow interactiveBtn" id="registrati">Registrati</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+
+
+
+
+
+    <div id="search" class="d-none my-5">    
+        <hr class="m-0">
+        <div class="d-flex justify-content-between align-items-center">
+            <div id="mobileSearchMenu">
+                <h1 class="text-start fs-5 semibold mt-1 my-0">RISULTATI</h1>
+                <p class="text-decoration-underline my-0">Scopri questi risultati</p>
+            </div>
+            <div>
+                <button class="bg-white text-primary border border-0" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Filtri <i
+                        class="fa-solid fa-angle-down text-primary"></i></button>
+    
+                <div class="offcanvas offcanvas-bottom rounded-top" tabindex="-1" id="offcanvasBottom"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header pb-2">
+                        <div class="w-75 bg-secondary bg-opacity-10 rounded-pill">
+                            <i class="fa-solid fa-magnifying-glass ps-2"></i>
+                            <input type="text" id="mobileSearch" class="bg-transparent border-0 shadow-none">
+                        </div>
+                        <button class="bg-white border-0 fw-semibold" type="button" data-bs-dismiss="offcanvas"
+                            aria-label="Close">Chiudi</button>
+                    </div>
+                    <div class="offcanvas-body small p-0 fw-semibold">
+                        <div class="accordion" id="accordionPanelsStayOpenExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                                    <button class="accordion-button shadow-none py-2" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne"
+                                        aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                        Categorie
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                                    aria-labelledby="panelsStayOpen-headingOne">
+                                    <div class="accordion-body pt-0 pb-2">
+                                        <small>Film e TV</small>
+                                        <div>
+                                            <input class="d-none" type="radio" name="mediaType" id="multi">
+                                            <input class="d-none" type="radio" name="mediaType" id="movie">
+                                            <input class="d-none" type="radio" name="mediaType" id="tv">
+                                            <label class="rounded-1 p-1 m-1 text-center" for="multi">Tutti</label>
+                                            <label class="rounded-1 p-1 m-1 text-center" for="movie">Film</label>
+                                            <label class="rounded-1 p-1 m-1 text-center" for="tv">Tv</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                                    <button class="accordion-button collapsed shadow-none py-2" type="button" data-bs-toggle="collapse"                             data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo" id="searchParameter">
+                                        <!-- Aggiungere JS -->
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                                    <div class="accordion-body pt-0 pb-2">
+                                        <small>Genere</small>
+                                        <div>
+                                            <input class="d-none" type="checkbox" id="animation">
+                                            <input class="d-none" type="checkbox" id="adventure">
+                                            <input class="d-none" type="checkbox" id="comedy">
+                                            <input class="d-none" type="checkbox" id="crime">
+                                            <input class="d-none" type="checkbox" id="documentary">
+                                            <input class="d-none" type="checkbox" id="drama">
+                                            <input class="d-none" type="checkbox" id="family">
+                                            <input class="d-none" type="checkbox" id="fantasy">
+                                            <input class="d-none" type="checkbox" id="mistery">
+                                            <label class="rounded-1 p-1 m-1 text-center" for="animation">Animazione</label>
+                                            <label class="rounded-1 p-1 m-1 text-center" for="adventure">Avventura e Azione</label>
+                                            <label class="rounded-1 p-1 m-1 text-center" for="comedy">Comedy</label>
+                                            <label class="rounded-1 p-1 m-1 text-center" for="crime">Crime</label>
+                                            <label class="rounded-1 p-1 m-1 text-center" for="documentary">Documentario</label>
+                                            <label class="rounded-1 p-1 m-1 text-center" for="drama">Drama</label>
+                                            <label class="rounded-1 p-1 m-1 text-center" for="family">Family</label>
+                                            <label class="rounded-1 p-1 m-1 text-center" for="fantasy">Fantasy e Fantascienza</label>
+                                            <label class="rounded-1 p-1 m-1 text-center" for="mistery">Mistero</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--    <select id="filter" class="form-select shadow-none">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>                              -->
+            </div>
+        </div>
+        <hr class="my-0">
+    
+        <div class="d-flex flex-column align-items-center">
+            <div class="row text-center w-100 d-flex justify-content-evenly" id="tableRow">
+    
+                <!-- Qui vanno i risultati della ricerca -->
+    
+            </div>
+    
+        </div>
+    </div>
+
+
+
+    <!---------------------------------------------------------------------------------------------------------------->
+
+
+
+    <main id="home-page" class="my-5">
+        <div class="bg-box d-lg-none">
+            <img src="assets/img/invite.png" alt="pubblicità retrò">
+        </div>
+        <div class="bg-box">
+            <img src="assets/img/cinema.png" alt="offerte del momento">
+            <img id="curtains" src="assets/img/cinema2.png" alt="cinema">
+        </div>
+        <div class="bg-box d-xl-none">
+            <img src="assets/img/invite2.png" alt="consegna veloce">
+        </div>
+    
+        <h2 class="text-warning">Offerte da non perdere!</h2>
+    
+        <div class="carousel-wrapper" id="products">
+            <div class="carousel-inner clearfix">
+                <div class="item">
+                    <a href="item.html?media_type=movie&id=101299">
+                        <img class="poster"
+                            src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/bTuBbGx8RYdhtf73hlCWo8wStMZ.jpg">
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="item.html?media_type=movie&id=299536">
+                        <img class="poster"
+                            src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/A404e70ZnvWFoWA517sySQXe8X6.jpg">
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="item.html?media_type=tv&id=1399">
+                        <img class="poster"
+                            src="https://www.themoviedb.org/t/p/w220_and_h330_face/qwGKZ0vy6o69aErE6cJ43L8DE2N.jpg">
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="item.html?media_type=movie&id=287947">
+                        <img class="poster"
+                            src="https://www.themoviedb.org/t/p/w220_and_h330_face/vJSd6IfAlA3ZYL36gnxfkslCnDn.jpg">
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="item.html?media_type=tv&id=1405">
+                        <img class="poster"
+                            src="https://www.themoviedb.org/t/p/w220_and_h330_face/58H6Ctze1nnpS0s9vPmAAzPcipR.jpg">
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="item.html?media_type=movie&id=8871">
+                        <img class="poster"
+                            src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/cBfITyt762dfbuDc76bFImV6MVV.jpg">
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="item.html?media_type=movie&id=331482">
+                        <img class="poster"
+                            src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/7WxwYuJLFXFBU53i02XQ56p3Lj3.jpg">
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="item.html?media_type=movie&id=675">
+                        <img class="poster"
+                            src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/iXg8dcylRbYNREcdU1Y2EGxpxxe.jpg">
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="item.html?media_type=movie&id=4564">
+                        <img class="poster"
+                            src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/u5ahabgPxtLhxSv46458vPn0uSv.jpg">
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="item.html?media_type=tv&id=2673">
+                        <img class="poster"
+                            src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/xDc6BMGDaeyalpSZ9KKk7RCBCz5.jpg">
+                    </a>
+                </div>
+                <div class="item"></div> <!-- Questa linea non va toccata -->
+            </div>
+            <a href="#" class="carousel-left"></a>
+            <a href="#" class="carousel-right"></a>
+        </div>       
+    </main>
+
+    <footer id="footer">
+        <div id="footerStyle" class="text-center">    
+            <div class="card-body">
+                <p class="p-2 card-text text-white">&copy; <a class="text-white" href="https://epicode.com/it/">Epicode</a>
+                    2022</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/nav2.js"></script>
+    <script src="assets/js/index.js"></script>
+    <script src="assets/js/search.js"></script>
+    <script src="https://kit.fontawesome.com/0ff7ae3867.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
