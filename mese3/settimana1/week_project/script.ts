@@ -1,4 +1,4 @@
-interface User {
+interface Smartphone {
     credito: number;
     numeroChiamate: number;
     ricarica(amount:number): void;
@@ -8,7 +8,7 @@ interface User {
     azzeraChiamate():void
 }
 
-class Utente implements User {
+class Cellulare implements Smartphone {
     credito: number;
     numeroChiamate: number;
 
@@ -34,33 +34,33 @@ class Utente implements User {
     }
 }
 
-let firstUtente = new Utente(10, 5);
-let secondUtente = new Utente(20, 7);
-let thirdUtente = new Utente(30, 10);
+let primoCell = new Cellulare(10, 5);
+let secondoCell = new Cellulare(25, 9);
+let terzoCell = new Cellulare(50, 9);
 
-console.log('Primo utente:');
+console.log('Primo Cellulare:');
 console.log('--------------------------');
-firstUtente.ricarica(10);
-console.log(firstUtente.numero404()); 
-firstUtente.chiamata(5)
-console.log(firstUtente.getNumeroChiamate()); 
-firstUtente.azzeraChiamate();
-console.log(firstUtente.getNumeroChiamate()); 
+primoCell.ricarica(10);
+console.log(primoCell.numero404()); 
+primoCell.chiamata(5)
+console.log(primoCell.getNumeroChiamate()); 
+primoCell.azzeraChiamate();
+console.log(primoCell.getNumeroChiamate()); 
 
-console.log('Secondo utente:');
+console.log('Secondo cellulare:');
 console.log('--------------------------');
-secondUtente.ricarica(20);
-console.log(secondUtente.numero404()); 
-secondUtente.chiamata(17)
-console.log(secondUtente.getNumeroChiamate()); 
-secondUtente.azzeraChiamate();
-console.log(secondUtente.getNumeroChiamate()); 
+secondoCell.ricarica(20);
+console.log(secondoCell.numero404()); 
+secondoCell.chiamata(17)
+console.log(secondoCell.getNumeroChiamate()); 
+secondoCell.azzeraChiamate();
+console.log(secondoCell.getNumeroChiamate()); 
 
-console.log('Terzo utente:');
+console.log('Terzo cellulare:');
 console.log('--------------------------');
-thirdUtente.ricarica(50);
-console.log(thirdUtente.numero404()); 
-thirdUtente.chiamata(30)
-console.log(thirdUtente.getNumeroChiamate()); 
-thirdUtente.azzeraChiamate();
-console.log(thirdUtente.getNumeroChiamate()); 
+terzoCell.ricarica(50);
+console.log(terzoCell.numero404()); 
+terzoCell.chiamata(30)
+console.log(terzoCell.getNumeroChiamate()); 
+terzoCell.azzeraChiamate();
+console.log(terzoCell.getNumeroChiamate()); 

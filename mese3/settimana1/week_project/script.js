@@ -1,50 +1,50 @@
-var Utente = /** @class */ (function () {
-    function Utente(_credito, _numeroChiamate) {
+var Cellulare = /** @class */ (function () {
+    function Cellulare(_credito, _numeroChiamate) {
         this.credito = _credito;
         this.numeroChiamate = _numeroChiamate;
     }
-    Utente.prototype.ricarica = function (amount) {
+    Cellulare.prototype.ricarica = function (amount) {
         this.credito += amount;
     };
-    Utente.prototype.chiamata = function (minuti) {
+    Cellulare.prototype.chiamata = function (minuti) {
         this.credito -= (minuti * 0.2);
         this.numeroChiamate++;
     };
-    Utente.prototype.numero404 = function () {
+    Cellulare.prototype.numero404 = function () {
         return this.credito;
     };
-    Utente.prototype.getNumeroChiamate = function () {
+    Cellulare.prototype.getNumeroChiamate = function () {
         return this.numeroChiamate;
     };
-    Utente.prototype.azzeraChiamate = function () {
+    Cellulare.prototype.azzeraChiamate = function () {
         this.numeroChiamate = 0;
     };
-    return Utente;
+    return Cellulare;
 }());
-var firstUtente = new Utente(10, 5);
-var secondUtente = new Utente(20, 7);
-var thirdUtente = new Utente(30, 10);
-console.log('Primo utente:');
+var primoCell = new Cellulare(10, 5);
+var secondoCell = new Cellulare(25, 9);
+var terzoCell = new Cellulare(50, 9);
+console.log('Primo Cellulare:');
 console.log('--------------------------');
-firstUtente.ricarica(10);
-console.log(firstUtente.numero404());
-firstUtente.chiamata(5);
-console.log(firstUtente.getNumeroChiamate());
-firstUtente.azzeraChiamate();
-console.log(firstUtente.getNumeroChiamate());
-console.log('Secondo utente:');
+primoCell.ricarica(10);
+console.log(primoCell.numero404());
+primoCell.chiamata(5);
+console.log(primoCell.getNumeroChiamate());
+primoCell.azzeraChiamate();
+console.log(primoCell.getNumeroChiamate());
+console.log('Secondo cellulare:');
 console.log('--------------------------');
-secondUtente.ricarica(20);
-console.log(secondUtente.numero404());
-secondUtente.chiamata(17);
-console.log(secondUtente.getNumeroChiamate());
-secondUtente.azzeraChiamate();
-console.log(secondUtente.getNumeroChiamate());
-console.log('Terzo utente:');
+secondoCell.ricarica(20);
+console.log(secondoCell.numero404());
+secondoCell.chiamata(17);
+console.log(secondoCell.getNumeroChiamate());
+secondoCell.azzeraChiamate();
+console.log(secondoCell.getNumeroChiamate());
+console.log('Terzo cellulare:');
 console.log('--------------------------');
-thirdUtente.ricarica(50);
-console.log(thirdUtente.numero404());
-thirdUtente.chiamata(30);
-console.log(thirdUtente.getNumeroChiamate());
-thirdUtente.azzeraChiamate();
-console.log(thirdUtente.getNumeroChiamate());
+terzoCell.ricarica(50);
+console.log(terzoCell.numero404());
+terzoCell.chiamata(30);
+console.log(terzoCell.getNumeroChiamate());
+terzoCell.azzeraChiamate();
+console.log(terzoCell.getNumeroChiamate());
