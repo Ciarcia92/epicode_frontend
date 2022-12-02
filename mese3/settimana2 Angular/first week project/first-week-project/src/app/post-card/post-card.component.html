@@ -1,0 +1,11 @@
+<div class="card">
+    <h5 class="card-header"><a [routerLink]="['/post/', p.id]" [state]="{data: p}">{{p.id}}</a></h5>
+    <div class="card-body">
+        <h5  class="card-title">{{p.title | uppercasecustom}}</h5>
+        <p appHighlight class="card-text">{{p.body}}</p>
+        <p>made with love by {{p.author | uppercasecustom}}</p>
+    </div>
+    <ng-content></ng-content>
+
+    <button class="btn btn-danger" (click)="elimina()">Elimina</button>
+</div>
