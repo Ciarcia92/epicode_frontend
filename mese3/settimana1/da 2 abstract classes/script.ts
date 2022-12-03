@@ -1,4 +1,4 @@
-abstract class Lavoratori {
+;abstract class Lavoratori {
     coderedd: number;
     redditoAnnualeLordo: number;
     tasseInps: number;

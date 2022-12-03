@@ -1,0 +1,38 @@
+"players": [
+    {
+      "id": 1,
+      "name": "Antonello Venditti",
+      "favorite-game": "Stardew Valley",
+      "subscriber": false
+    },
+    {
+      "id": 2,
+      "name": "Flavio Briatore",
+      "favorite-game": "Dragon Quest XI",
+      "subscriber": false
+    },
+    {
+      "id": 3,
+      "name": "Martinez Quarta",
+      "favorite-game": "Fifa 2023",
+      "subscriber": true
+    },
+    {
+      "id": 4,
+      "name": "Vasco De Gama",
+      "favorite-game": "Uncharted",
+      "subscriber": true
+    },
+    {
+      "id": 5,
+      "name": "John JJ Cristo",
+      "favorite-game": "GTA Via Crucis History",
+      "subscriber": true
+    },
+    {
+      "id": 6,
+      "name": "Veronica Mayers",
+      "favorite-game": "Troy - La caduta",
+      "subscriber": true
+    }
+  ],

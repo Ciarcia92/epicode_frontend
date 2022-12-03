@@ -42,7 +42,7 @@ console.log('Primo Cellulare:');
 console.log('--------------------------');
 primoCell.ricarica(10);
 console.log(primoCell.numero404()); 
-primoCell.chiamata(5)
+primoCell.chiamata(20)
 console.log(primoCell.getNumeroChiamate()); 
 primoCell.azzeraChiamate();
 console.log(primoCell.getNumeroChiamate()); 

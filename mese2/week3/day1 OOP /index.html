@@ -15,48 +15,53 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
+
   <body>
     <div class="container mt-4">
-        <div class="row">
-          <div class="col-6 input-container">
-            <form id="custom-form">
+      <div class="row">
+        <div class="col-6 input-container">
+          <form id="custom-form">
             <div class="form-label">
               <label class="d-flex flex-column m-2" for="name">Nome</label>
               <input class="w-100" type="text" id="name" />
             </div>
+
             <div class="form-label">
-              <label class="d-flex flex-column m-2" for="lastName"
-                >Cognome</label
-              >
+              <label class="d-flex flex-column m-2" for="lastName">Cognome</label>
               <input class="w-100" type="text" id="lastName" />
             </div>
             <div class="form-label">
-              <label class="d-flex flex-column m-2" for="birthYear"
-                >Data di nascita</label
+              <label
+                class="d-flex flex-column m-2"
+                for="birthYear"
+                class="d-flex flex-column m-2"
+                for="birthYear"
+                class="d-flex flex-column m-2"
+                for="birthYear"
               >
+                Data di nascita
+              </label>
               <input type="date" id="birthYear" />
             </div>
-            <button type="submit" class="btn btn-primary m-4" id="submit">
-              Invia
-            </button>
-            </form>
-          </div>
-          <div class="col-6">
-            <table class="table">
-              <thead>
-                <tr>
-                  <th scope="col">Name</th>
-                  <th scope="col">Age</th>
-                  <th class="text-center" scope="col">Elimina</th>
-                </tr>
-              </thead>
-              <tbody id="tableBody"></tbody>
-            </table>
-          </div>
+            <button type="submit" class="btn btn-primary m-4" id="submit">Invia</button>
+          </form>
         </div>
-      </form>
+
+        <div class="col-6">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Age</th>
+                <th class="text-center" scope="col">Elimina</th>
+              </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+          </table>
+        </div>
+      </div>
     </div>
 
     <script
@@ -67,6 +72,4 @@
 
     <script src="./assets/js/script.js"></script>
   </body>
-</html>
-</head>
 </html>

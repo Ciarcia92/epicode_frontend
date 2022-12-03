@@ -34,7 +34,7 @@ rightArrow[0].addEventListener('mouseout', function () {
     cube[index].style.transform = 'rotateY(0deg)';
   }
 });
-
+/*
 
 playPause[0].addEventListener('click', function(){
     let angle = Number(cube[0].style.transform.replace(/\D/g, ''));
@@ -43,3 +43,4 @@ playPause[0].addEventListener('click', function(){
     }
 });
 
+*/
