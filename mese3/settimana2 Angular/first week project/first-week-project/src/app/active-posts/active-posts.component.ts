@@ -10,7 +10,7 @@ import { PostService } from '../post.service';
 export class ActivePostsComponent implements OnInit {
 
   posts:Post[] = []
-  //i dati visualizziamo (e manipoliamo in questo component)
+
 
   constructor(private postSRV:PostService) { }
 
@@ -20,7 +20,7 @@ export class ActivePostsComponent implements OnInit {
 
   disattiva(id:number) {
     console.log(id);
-    
+
     this.postSRV.toggleDbPost(id).then(res=>{
       if(res.ok){
         this.getPosts()
@@ -28,7 +28,7 @@ export class ActivePostsComponent implements OnInit {
         console.log("err");
       }
     })
-    // this.postSRV.toggleServicePost(id)
+
   }
 
   elimina(id:number) {
@@ -42,7 +42,7 @@ export class ActivePostsComponent implements OnInit {
   getPosts() {
     this.posts = this.postSRV.getPostsFiltrati(true)
     console.log(this.posts);
-    
+
   }
 
 

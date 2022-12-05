@@ -11,7 +11,7 @@ export class PostService {
   get userPosts() {
     return this.posts;
   }
-  //i dati che vengono letti quando carichiamo una delle pagine
+
 
   constructor() { }
 
@@ -40,17 +40,17 @@ export class PostService {
   }
 
   toggleDbPost(id:number) {
-    //QUA USO LO SPREAD OPERATOR PERCHÈ VOGLIO UNA COPIA DELL'ELEMENTO TROVATO E NON DIRETTAMENTE QUELLO DELL'ARRAY
-    //IL METODO .FIND() RESTITUISCE L'OGGETTO DELL'ARRAY, MODIFICARE postDiArray MODIFICA L'ELEMENTO INTERNO A THIS.POSTS
+   
+
     let postDiArray = this.posts.find(p=>p.id==id)
     let postClone = {...postDiArray}
     if(postDiArray == undefined) {
       throw new Error("Elemento non trovato")
     }
-    //SE FACESSIMO QUESTA OPERAZIONOE SU postDiArray AVREMMO GIÀ MODIFICATO L'ARRAY THIS.POSTS SENZA PERÒ ESSERE SICURI DI AVER AVUTO UN SUCCESSO CON IL FETCH
-    //QUINDI USO LA VARIABILE "CLONE" DELL'ELEMENTO TROVATO COSÌ CHE LA MODIFICA VENGA FATTA DAL METODO toggleServicePost COME ABBIAMO VISTO INSIEME
+
+
     postClone.active = !postClone.active
-    //QUESTA MODIFICA SERVE PER PASSARE IL POST MODIFICATO AL FETCH PER MODIFICARE IL DB, SOLO AL COMPLETAMENTO CI VA BENE MODIFICARE THIS.POSTS
+
     return fetch("http://localhost:3000/posts/"+id, {
       method:"PUT",
       headers: {
