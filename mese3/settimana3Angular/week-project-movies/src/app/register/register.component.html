@@ -1,0 +1,57 @@
+<div id="registration">
+  <div class="container">
+      <div class="row justify-content-center align-items-center">
+          <div class="col-md-6">
+              <div class="col-md-12">
+                <form #tdform="ngForm" (ngSubmit)="onSubmit(tdform)">
+                      <h3 class="text-center text-info text-black">Form di Registrazione</h3>
+                      <div class="form-group">
+                        <label for="exampleInputName1" class="form-label">Full name</label>
+                        <input
+                        required
+                        #name="ngModel"
+                        name="name"
+                        type="text"
+                        class="form-control"
+                        aria-describedby="emailHelp"
+                        ngModel
+                        />
+                        <p *ngIf="name.invalid && name.touched">
+                          <strong>Questo campo è obbligatorio</strong>
+                        </p>
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input
+                        required
+                        #email="ngModel"
+                        name="email"
+                        type="email"
+                        class="form-control"
+                        aria-describedby="emailHelp"
+                        ngModel
+                        />
+                        <p *ngIf="email.invalid && email.touched">
+                          <strong>Questo campo è obbligatorio</strong>
+                        </p>
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input
+                          #password="ngModel"
+                          name="password"
+                          type="password"
+                          class="form-control"
+                          ngModel
+                        />
+                        <p *ngIf="password.invalid && password.touched">
+                          <strong>Questo campo è obbligatorio</strong>
+                        </p>
+                      </div>
+                      <button type="submit" class="btn btn-primary mt-3">Register</button>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>

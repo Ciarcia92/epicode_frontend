@@ -1,0 +1,28 @@
+a {
+  text-decoration: none;
+  color: rgb(241, 233, 218);
+}
+
+h5 {
+  color: rgb(241, 233, 218);
+}
+#navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 60px;
+  z-index: 10000;
+  border-bottom: 2px solid black;
+}
+
+#navbar,
+#offcanvasDark {
+  /* fallback for old browsers */
+  background: rgb(64, 62, 65);
+}
+
+#offcanvasDark {
+  margin-top: 60px;
+  width: 15vw;
+}
