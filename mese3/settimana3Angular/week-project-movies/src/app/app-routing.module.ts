@@ -5,6 +5,8 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { RegisterComponent } from './register/register.component';
 import { MostPopularComponent } from './most-popular/most-popular.component';
 import { TopRatedComponent } from './top-rated/top-rated.component';
+import { MoviesComponent } from './movies/movies.component';
+import { UserComponent } from './user/user.component';
 
 const routes: Routes = [
   {
@@ -16,17 +18,26 @@ const routes: Routes = [
     component: RegisterComponent,
   },
   {
-    path: 'movies',
+    path: 'home',
     component: HomepageComponent,
-  },
-
-  {
-    path: 'most-popular',
-    component: MostPopularComponent,
-  },
-  {
-    path: 'top-rated',
-    component: TopRatedComponent,
+    children: [
+      {
+        path: 'movies',
+        component: MoviesComponent,
+      },
+      {
+        path: 'most-popular',
+        component: MostPopularComponent
+      },
+      {
+        path: 'top-rated',
+        component: TopRatedComponent
+      },
+      {
+        path: 'user',
+        component: UserComponent
+      }
+    ]
   },
   { path: '**', redirectTo: 'AppComponent' },
 ];

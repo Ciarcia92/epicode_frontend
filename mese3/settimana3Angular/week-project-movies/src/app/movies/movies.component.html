@@ -1,14 +1,7 @@
-<div class="d-flex flex-wrap popular">
-    <div *ngFor="let movie of movies" class="card m-4" style="width: 25vw">
-      <img
-        [src]="'http://image.tmdb.org/t/p/w500' + movie.poster_path"
-        class="card-img-top"
-        alt="..."
-      />
-      <div class="card-body">
-        <h5 class="card-title">{{ movie.title }}</h5>
-        <p>Titolo originale: '{{ movie.original_title }}'</p>
-        <p class="card-text">{{ movie.overview }}</p>
-      </div>
-    </div>
-  </div>
+<div class="movie-container">
+  <app-movie-card
+    *ngFor="let movie of movies"
+    [movie]="movie"
+    [movies]="movies"
+  ></app-movie-card>
+</div>

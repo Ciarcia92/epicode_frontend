@@ -1,34 +1,10 @@
 {
   "users": [
     {
-      "email": "giuliadellavecchia96@gmail.com",
-      "password": "$2a$10$4Z0OE0AxtEus0HaZyOwiPeEbH65ATnL7c1FDXAqGYDamsvEajES1a",
-      "name": "Giulia Della Vecchia",
-      "id": 1
-    },
-    {
-      "email": "ciarcia@hotmail.it",
-      "password": "$2a$10$oIhFPmVtSu/M12VxC/aP3OWUSj/lvNzWATEzRPekeH.QvVY0GXH0i",
-      "name": "Lorenzo",
-      "id": 2
-    },
-    {
-      "email": "gesu@hotmail.it",
-      "password": "$2a$10$RP7DRfmICMVpslX41PffuuWWQzCCqnsUw3v3p8elIfR.CDF/HVfra",
-      "name": "paolo",
-      "id": 3
-    },
-    {
-      "email": "fudeel@fudeel.it",
-      "password": "$2a$10$FWhcerMR7Bx30TCNjLJaBOoZoBid35XCy0JcC5oFcambu0nWXvE0a",
-      "name": "Fudeel",
-      "id": 4
-    },
-    {
-      "email": "ciaociao3@hotmail.it",
-      "password": "$2a$10$Q4ZkCS29or1wVY8vTXRsVurTaOakP1MKkaIDaqg9Xugc/o4sjmHyy",
+      "email": "ciarcia92@hotmail.it",
+      "password": "$2a$10$pLnpn07NV1Gjxf3tOkMJzufi/inT4xpxWhVvi5x65hsdoWooPiQIW",
       "name": "lorenzo",
-      "id": 5
+      "id": 1
     }
   ],
   "favorites": [

@@ -1,27 +1,33 @@
-import { HttpClient } from '@angular/common/http';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
+import { FetchMoviesService } from "../fetch-movies.service";
 
 @Component({
-  selector: 'app-movies',
-  templateUrl: './movies.component.html',
-  styleUrls: ['./movies.component.scss'],
+  selector: "app-movies",
+  templateUrl: "./movies.component.html",
+  styleUrls: ["./movies.component.scss"],
 })
 export class MoviesComponent implements OnInit {
-  constructor(private httpClient: HttpClient) {}
   movies: any;
+  favsArray: any = [];
+
+  constructor(private fetchMoviesSrv: FetchMoviesService) {}
 
   ngOnInit(): void {
-    this.httpClient
-      .get('http://localhost:3000/movies-toprated')
-      .subscribe((response) => {
-        this.movies = response;
-      });
+    this.fetchMoviesSrv
+      .topRatedMovies()
+      .subscribe((res) => (this.movies = res));
+    this.fetchMoviesSrv
+      .mostPopularMovies()
+      .subscribe((res) => this.movies.push(...(res as any)));
 
-    this.httpClient
-      .get('http://localhost:3000/movies-popular')
-      .subscribe((response) => {
-        this.movies.push(...(response as any));
-        console.log(this.movies);
-      });
+    // this.fetchMoviesSrv.getFavs().subscribe((res) => {
+    //   this.favsArray = res;
+    //   this.favsArray.map((fav: any) => {
+    //     const { movieId } = fav;
+    //     console.log(movieId);
+    //     return movieId;
+    //   });
+    // });
+    // console.log(this.favsArray);
   }
 }

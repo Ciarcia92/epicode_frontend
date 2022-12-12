@@ -21,7 +21,7 @@ export class LoginComponent implements OnInit {
       await this.authSrv.login(form.value).subscribe(res => console.log(res));
       form.reset();
       this.errorMessage = undefined;
-      this.router.navigate(['/movies']);
+      this.router.navigate(['/home']);
     } catch (error: any) {
       this.errorMessage = error;
       console.error(error);
